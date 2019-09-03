@@ -7,11 +7,11 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="address" class="com.dependencyinjectionbyconstrutor.Address">
+    <bean id="address" class="com.dependencyinjection.constructorbased.Address">
         <constructor-arg value="hyd"/>
         <constructor-arg value="tel"/>
     </bean>
-    <bean id="student" class="com.dependencyinjectionbyconstrutor.Student">
+    <bean id="student" class="com.dependencyinjection.constructorbased.Student">
         <constructor-arg value="monu"/>
         <constructor-arg value="124"/>
         <constructor-arg ref="address"/>

@@ -1,4 +1,4 @@
-package com.dependencyinjectionbyconstrutor.propertybased;
+package com.dependencyinjection.propertybased;
 
 public class Address {
     String city;

@@ -1,4 +1,4 @@
-package com.dependencyinjectionbyconstrutor.propertybased;
+package com.dependencyinjection.propertybased;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

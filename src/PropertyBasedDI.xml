@@ -6,12 +6,12 @@
 >
 
 
-    <bean id="addr" class="com.dependencyinjectionbyproperty.Address">
+    <bean id="addr" class="com.dependencyinjection.propertybased.Address">
         <constructor-arg value="hyd"/>
         <constructor-arg value="ind"/>
     </bean>
 
-    <bean id="student" class="com.dependencyinjectionbyproperty.Student">
+    <bean id="student" class="com.dependencyinjection.propertybased.Student">
         <property name="sname" value="monu"/>
         <property name="address" ref="addr"/>
     </bean>

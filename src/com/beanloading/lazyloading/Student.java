@@ -1,4 +1,4 @@
-package com.beanLoading.lazyloading;
+package com.beanloading.lazyloading;
 
 public class Student {
     String sname;
@@ -7,6 +7,7 @@ public class Student {
     public Student(String sname, int id) {
         this.sname = sname;
         this.id = id;
+        System.out.println(" lazyloading.Student object instantiated...");
     }
 
     public String getSname() {
