@@ -1,4 +1,4 @@
-package com.dependencyinjectionbyconstrutor;
+package com.dependencyinjectionbyconstrutor.constructorbased;
 
 public class Student {
     String name;

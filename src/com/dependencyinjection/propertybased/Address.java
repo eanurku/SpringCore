@@ -1,4 +1,4 @@
-package com.dependencyinjectionbyconstrutor;
+package com.dependencyinjectionbyconstrutor.propertybased;
 
 public class Address {
     String city;
@@ -9,19 +9,19 @@ public class Address {
         this.country = country;
     }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
     public String getCity() {
         return city;
     }
 
     public String getCountry() {
         return country;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 }
