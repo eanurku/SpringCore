@@ -11,14 +11,13 @@
 
     <!-- add util namespace to use <util:constant/> tag-->
 
-    <bean id="student" class="com.utilschema.utilconstant.enumconstant.Student">
-        <constructor-arg value="Monu"/>
-        <constructor-arg value="13"/>
-        <constructor-arg index="2" >
-            <util:constant   static-field="com.utilschema.utilconstant.enumconstant.StudentType.PartTime" />
-        </constructor-arg>
+    <!-- creates a java.util.Properties instance with values loaded from the supplied location -->
+
+    <bean id="jdbcconfig1" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location" value="classpath:properties/jdbc.prop"/>
     </bean>
 
+    <util:properties id="jdbcconfig2" location="classpath:properties/jdbc.prop"/>
 
 </beans>
 
