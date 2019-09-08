@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class LazyLoadingDemo {
     public static void main(String[] args) {
-        ApplicationContext appcxt = new ClassPathXmlApplicationContext("BeanLoading.xml");
+        ApplicationContext appcxt = new ClassPathXmlApplicationContext("resources/BeanLoading.xml");
 
 
         Student st1 = appcxt.getBean("lazystudent1", Student.class);

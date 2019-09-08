@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanCreationDemo {
     public static void main(String[] args) {
 
-        ApplicationContext appcxt = new ClassPathXmlApplicationContext("BeanCreation.xml");
+        ApplicationContext appcxt = new ClassPathXmlApplicationContext("resources/BeanCreation.xml");
         Student studentobj = (Student) appcxt.getBean("student");
 
         System.out.println(studentobj.toString());

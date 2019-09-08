@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SingletonScopeDemo {
     public static void main(String[] args) {
-        ApplicationContext appcxt = new ClassPathXmlApplicationContext("BeanScope.xml");
+        ApplicationContext appcxt = new ClassPathXmlApplicationContext("resources/BeanScope.xml");
 
         Student st1 = appcxt.getBean("sstudent1", Student.class);
         System.out.println(st1.hashCode());

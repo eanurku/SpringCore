@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class InjectingCollectionDemo {
 
     public static void main(String[] args) {
-        ApplicationContext appcontext = new ClassPathXmlApplicationContext("InjectingCollection.xml");
+        ApplicationContext appcontext = new ClassPathXmlApplicationContext("resources/InjectingCollection.xml");
         Student student = appcontext.getBean("student", Student.class);
         System.out.println(student);
         Student student1 = appcontext.getBean("student1", Student.class);

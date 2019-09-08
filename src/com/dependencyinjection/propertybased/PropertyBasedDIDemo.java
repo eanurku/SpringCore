@@ -7,7 +7,7 @@ public class PropertyBasedDIDemo {
 
     public static void main(String[] args) {
 
-        ApplicationContext appcxt = new ClassPathXmlApplicationContext("PropertyBasedDI.xml");
+        ApplicationContext appcxt = new ClassPathXmlApplicationContext("resources/PropertyBasedDI.xml");
 
         Address addr = appcxt.getBean("addr",Address.class);
         System.out.println(addr);

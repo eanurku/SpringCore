@@ -1,12 +1,10 @@
-package com.beanloading.preloading;
+package com.utilschema.utilproperty;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class PreLoadingDemo {
+public class UtilPropertyDemo1 {
     public static void main(String[] args) {
-
-        ApplicationContext appcxt = new ClassPathXmlApplicationContext("resources/BeanLoading.xml");
-
+        ApplicationContext appcxt = new ClassPathXmlApplicationContext("");
     }
 }
