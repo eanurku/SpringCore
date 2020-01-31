@@ -8,7 +8,7 @@ public class Student {
     public Student(String sname, int id) {
         this.sname = sname;
         this.id = id;
-        System.out.println(" preloading.Student object instantiated...");
+        System.out.println(" preloading.Student object instantiated..."+this.toString());
     }
 
     public String getSname() {
@@ -19,4 +19,11 @@ public class Student {
         return id;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "sname='" + sname + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }
