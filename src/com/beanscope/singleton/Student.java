@@ -5,6 +5,9 @@ public class Student {
     String sname;
     int id;
 
+    public Student() {
+    }
+
     public Student(String sname, int id) {
         this.sname = sname;
         this.id = id;
