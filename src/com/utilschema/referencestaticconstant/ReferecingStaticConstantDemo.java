@@ -14,5 +14,8 @@ public class ReferecingStaticConstantDemo {
         Student student2 = appcontext.getBean("student2", Student.class);
         System.out.println(student2);
 
+        Integer SummerIntern = appcontext.getBean("com.utilschema.referencestaticconstant.StudentType.SummerIntern", Integer.class);
+        System.out.println(SummerIntern);
+
     }
 }
